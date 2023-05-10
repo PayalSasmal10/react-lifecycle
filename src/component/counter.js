@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 
-class Counter extends Component {  
+class Counter extends Component {
+    
+    componentDidUpdate(){
+        console.log("componentDidUpdate : component updated");
+    }
 
     render(){
         return (
