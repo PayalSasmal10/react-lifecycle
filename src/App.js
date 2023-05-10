@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Counter from "./component/counter";
 import './App.css';
 
 class App extends Component {
@@ -21,8 +22,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>{this.state.count}</h1>
+        {/* <h1>{this.state.count}</h1> */}
         {/* <button onClick={this.increment.bind(this)}>Click Me</button>  // this is one of the way to increase the state */}
+        <Counter counter={this.state.count}/>
         <button onClick={() => {this.increment()}}>Click Me</button>
       </div>
     );
